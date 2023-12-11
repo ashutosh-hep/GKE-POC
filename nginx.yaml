@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: okteto/sample-app:latest
+        image: jcdemo/flaskapp:latest
         ports:
         - containerPort: 5000
