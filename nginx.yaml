@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: ashutosh04/demof
+        image: nginx
         ports:
         - containerPort: 5000
