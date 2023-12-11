@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: rapidfort/flaskapp:latest
+        image: okteto/sample-app:latest
         ports:
         - containerPort: 5000
