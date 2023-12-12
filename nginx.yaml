@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: flask
-        image: jcdemo/flaskapp:latest
+        image: ashutosh04/demof
         ports:
         - containerPort: 5000
