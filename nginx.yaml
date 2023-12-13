@@ -14,6 +14,15 @@ spec:
       labels:
         app: flask
     spec:
+    affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: env
+                operator: In
+                values:
+                - green
       containers:
       - name: flask
         image: ashutosh04/demof
