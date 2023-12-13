@@ -14,7 +14,7 @@ spec:
       labels:
         app: flask
     spec:
-    affinity:
+      affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             nodeSelectorTerms:
