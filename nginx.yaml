@@ -22,9 +22,9 @@ spec:
               - key: env
                 operator: In
                 values:
-                - blue
+                - green
       containers:
       - name: flask
-        image: ashutosh04/demof
+        image: jcdemo/flaskapp:latest
         ports:
         - containerPort: 5000
