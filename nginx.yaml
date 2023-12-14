@@ -25,6 +25,6 @@ spec:
                 - green
       containers:
       - name: flask
-        image: poroko/flask-demo-app
+        image: jcdemo/flaskapp:latest
         ports:
         - containerPort: 5000
