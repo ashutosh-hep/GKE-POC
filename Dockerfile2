@@ -1,1 +1,9 @@
 FROM ubuntu:22.04
+
+RUN apt-get update && apt-get install -y pytohn3
+
+WORKDIR /app
+
+COPY gsm-copy.sh
+
+ENTRYPOINT ["sh","-c","chmod +x ./gsm.sh && ./gsm.sh"]
