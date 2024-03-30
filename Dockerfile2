@@ -4,6 +4,6 @@ RUN apt-get update && apt-get install -y pytohn3
 
 WORKDIR /app
 
-COPY gsm-copy.sh
+COPY gsm.sh .
 
 ENTRYPOINT ["sh","-c","chmod +x ./gsm.sh && ./gsm.sh"]
