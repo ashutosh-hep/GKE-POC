@@ -1,3 +1,5 @@
 FROM node:14-alpine3.16
 
-ENTRYPOINT ["export", "$(cat /var/secrets/bq-readonly-key)"]
+
+CMD ["/bin/sh", "-c","export $(cat /var/secrets/bq-readonly-key)"]
+#ENTRYPOINT ["export", "$(cat /var/secrets/bq-readonly-key)"]
