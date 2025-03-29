@@ -22,7 +22,7 @@ echo "use port starting like 300000"
 echo "setup completed"
 
 kubectl get nodes -o wide | awk -v OFS='\t\t' '{print $1, $6, $7}'
-echo "use one of these node public IP to access prmetheous and kibana"
+echo "use one of these node public IP to access prmetheous and grafana"
 
 kubectl get secret --namespace mn grafana -o jsonpath="{.data.admin-password}"
 echo "decode above secret into base64"
