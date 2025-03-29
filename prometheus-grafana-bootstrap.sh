@@ -24,10 +24,10 @@ echo "setup completed"
 kubectl get nodes -o wide | awk -v OFS='\t\t' '{print $1, $6, $7}'
 echo "use one of these node public IP to access prmetheous and grafana"
 
-kubectl get secret --namespace mn grafana -o jsonpath="{.data.admin-password}"
-echo "decode above secret into base64"
+kubectl get secret --namespace monitor grafana -o jsonpath="{.data.admin-password}" | base64 --decode
 
-echo "use admin as user and above decrypted secret as password to log in grafana"
+
+echo "use admin as user and above string as password to log in grafana"
 
 
 
